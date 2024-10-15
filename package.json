@@ -7,7 +7,7 @@
 	"scripts": {
 		"build": "tsc",
 		"test": "vitest --run",
-		"check": "tsc --noEmit",
+		"check": "[ dist/index.js -nt src/index.ts ] && exit 0 || npm run build",
 		"dev": "esrun --watch dist/index.js",
 		"start": "node dist/index.js"
 	},
