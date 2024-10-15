@@ -6,7 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "tsc",
-		"test": "vitest",
+		"test": "vitest --run",
 		"check": "tsc --noEmit",
 		"dev": "esrun --watch dist/index.js",
 		"start": "node dist/index.js"
